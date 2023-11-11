@@ -10,52 +10,47 @@
 
 
     <header class="header">
-        <div class="nombre">
-            <h2 class="titulo">Arcadeland</h2>
-        </div>
-        <div class="categorias">
-            <h2 class="titulo">Categorias</h2>
-        </div>
-        <div class="sobre-nosotros">
-            <h2 class="titulo">sobre nosotros</h2>
-        </div>
-        <div class="login">
-            <h2 class="titulo">iniciar sesion</h2>
-        </div>
-    </header>
-    <section class="cuerpo" >
 
-        <div class="circulo">
-            <p class="texto-circulo">
-                Los mejores juegos <br> de cada categoria <br> los podras encontrar aquí
-            </p>
-        </div>
-        <h4 titulo-accion>Mejores juegos de acción</h4>
-        <div id="container">
-            <div id="slider-container">
-                <span onclick="slideRight()" class="btn"></span>
-                <div id="slider">
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                    <div class="slide"><span>150x150</span></div>
-                </div>
-                <span onclick="slideLeft()" class="btn"></span>
+        <section class="pc">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section class="mobile">
+
+            <div class="mobile-container" id="mobileContainer">
+                <h1>ArcadeLand</h1>
+                <button id="abrir" class="menu">
+                    <img class="menu" src="images/icons8-menú.svg" alt="">
+                </button>
             </div>
+
+            <nav class="nav" id="nav">
+                <div class="nombre-cerrar">
+                    <button id="cerrarM" class="menu">
+                        <img src="images/icons8-eliminar.svg" alt="" class="cerrar-menu">
+                    </button>
+                </div>
+
+                <ul class="nav-list">
+                    <li id="cerrarM" class="botones"><a href="">Categorias</a></li>
+                    <li id="cerrarM"><a href="">Sobre nosotros</a></li>
+                    <li id="cerrarM"><a href="">Inicia Sesion</a></li>
+                </ul>
+            </nav>
+
+        </section>
+    </header>
+
+    <section id="principal-container">
+        <div class="home-container">
+            <section class="home-text">
+                <p>Los mejores juegos de cada categoria los podras encontrar aqui</p>
+            </section>
         </div>
     </section>
-    
 
-
-
-
-
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
