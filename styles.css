@@ -70,8 +70,8 @@ header{
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-
 }
+
 .texto-circulo{
     margin-left: 650px;
     margin-top: 15%;
@@ -187,6 +187,10 @@ html{
 @media screen and (width <= 765px) {
 
     .pc{
+        display: none;
+    }
+    
+    .bodypc{
         display: none;
     }
 
@@ -382,4 +386,7 @@ html{
         background-color: #ae0a53;
     }
 
+    .bodypc{
+        display: none;
+    }
 }
