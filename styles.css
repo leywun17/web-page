@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color1 : #000000;
+    --color2 : #0d0c06;
+    --color3 : #372d20;
+    --color4 : #626043;
+    --color5 : #947f6a;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +32,10 @@ header{
     padding: 10px;
 }
 
+.nombre{
+    margin-right: 300px;
+}
+
 .categorias, .nombre, .sobre-nosotros, .login{
     width: 200px;
     display: flex;
@@ -39,7 +52,12 @@ header{
 .cuerpo{
     width: 100%;
     height: 100%;
-    background: url(./foto-inicio.jpg), lightgray 50% / cover no-repeat;
+    background: url(./foto-inicio.jpg), lightgray 70% / cover no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
 }
 .texto-circulo{
     margin-left: 650px;
@@ -60,6 +78,83 @@ header{
     margin: 10px;
     position: absolute;
     right: 50%;
+    margin: 20px;
 }
 
-/* carousel */
+/* corsel */
+
+#container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 980px;
+}
+ #slider-container {
+    height: 300px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+ }
+ #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 15px;
+    width: 15px;
+    border-left: 8px solid #696969;
+    border-top: 8px solid #696969;
+    cursor: pointer;
+ }
+ #slider-container .btn:hover {
+    transform: scale(1.2);
+ }
+ #slider-container .btn.inactive {
+    border-color: #282828
+ }
+ #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+ }
+ #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+ }
+ #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all .5s;
+ }
+ #slider-container #slider .slide {
+    height: 90%;
+    margin: auto 10px;
+    background-color: #b5b5b5;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    place-items: center;
+ }
+ #slider-container #slider .slide span {
+    color: white;
+    font-size: 60px;
+ }
+ @media only screen and (min-width: 1100px) {
+    #slider-container #slider .slide {
+        width: calc(2.5% - 20px);
+    }
+ }
+ @media only screen and (max-width: 1100px) {
+    #slider-container #slider .slide {
+        width: calc(3.3333333% - 20px);
+    }
+ }
+ @media only screen and (max-width: 900px) {
+    #slider-container #slider .slide {
+        width: calc(5% - 20px);
+    }
+ }
+ @media only screen and (max-width: 550px) {
+    #slider-container #slider .slide {
+        width: calc(10% - 20px);
+    }
+ }
