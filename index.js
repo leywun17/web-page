@@ -173,5 +173,5 @@ function slideLeft() {
     }
     if (currentPosition > 0) {
         buttons[0].classList.remove('inactive');
-    }
+	}
 };
