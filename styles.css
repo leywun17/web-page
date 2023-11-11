@@ -178,12 +178,14 @@ header{
     display: none;
 }
 
-@media screen and (width <= 765px) {
 
+@media screen and (width <= 765px) {
+    
+    
     .pc{
         display: none;
     }
-
+    
     .mobile-container{
         width: 100%;
         height: 80px;
@@ -200,7 +202,7 @@ header{
         justify-content: space-between;
         padding: 25px;
     }
-
+    
     .mobile h1{
         color: #7ECA9C;
         font-family: 'Roboto Condensed', sans-serif;
@@ -221,7 +223,7 @@ header{
         z-index: 1;
         box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
     }
-
+    
     .nav-list {
         list-style-type: none;
         display: flex;
@@ -233,7 +235,7 @@ header{
         text-decoration: none;
         color: white;
     }
-
+    
     .menu{
         background-color: #685a7c;
         display: flex;
@@ -242,7 +244,7 @@ header{
         align-items: center;
         border-radius: 5px;
     }
-
+    
     .cerrar-menu{
         background-color: #1C1427;
         border: none;
@@ -253,6 +255,10 @@ header{
         border-radius: 5px;
     }
 
+    .visible{
+        display: block;
+    }
+    
     .botones{
         margin-top: 25px;
         background-color: transparent;
@@ -261,14 +267,6 @@ header{
 
     .botones p{
         color: white;
-    }
-    
-    .visible{
-        display: flex;
-    }
-
-    .difuminado{
-        filter: blur(8px);
     }
 
     .principal-container{
