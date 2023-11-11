@@ -80,6 +80,7 @@ function slideLeft() {
 		buttons[0].classList.remove('inactive');
 	}
 };
+
 let abrirMenu = document.querySelector("#abrir");
 let cerrarMenu = document.querySelector("#cerrarM");
 let nav = document.querySelector("#nav");
@@ -108,7 +109,7 @@ cerrarMenu.addEventListener("click", () =>{
 
 
 
-window.addEventListener("resize", checkWidth);
+/* window.addEventListener("resize", checkWidth);
 
 function checkWidth() {
     containerWidth = container.offsetWidth;
@@ -175,3 +176,4 @@ function slideLeft() {
         buttons[0].classList.remove('inactive');
 	}
 };
+ */
