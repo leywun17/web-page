@@ -1,17 +1,30 @@
+let abrirMenu = document.querySelector("#abrir");
+let cerrarMenu = document.querySelector("#cerrarM");
+let nav = document.querySelector("#nav");
+let principalContainer = document.querySelector("#principal-container")
+let mobileContainer = document.querySelector("#mobileContainer")
+
+abrirMenu.addEventListener("click", () => {
+	nav.classList.add("visible")
+})
+
+cerrarMenu.addEventListener("click", () =>{
+	nav.classList.remove("visible")
+})
 
 /* carousel */
-var container = document.getElementById('container')
-var slider = document.getElementById('slider');
-var slides = document.getElementsByClassName('slide').length;
-var buttons = document.getElementsByClassName('btn');
+let container = document.getElementById('container')
+let slider = document.getElementById('slider');
+let slides = document.getElementsByClassName('slide').length;
+let buttons = document.getElementsByClassName('btn');
 
-var currentPosition = 0;
-var currentMargin = 0;
-var slidesPerPage = 0;
-var slidesCount = slides - slidesPerPage;
-var containerWidth = container.offsetWidth;
-var prevKeyActive = false;
-var nextKeyActive = true;
+let currentPosition = 0;
+let currentMargin = 0;
+let slidesPerPage = 0;
+let slidesCount = slides - slidesPerPage;
+let containerWidth = container.offsetWidth;
+let prevKeyActive = false;
+let nextKeyActive = true;
 
 window.addEventListener("resize", checkWidth);
 
@@ -83,21 +96,7 @@ function slideLeft() {
 
 //menu mobile
 
-let abrirMenu = document.querySelector("#abrir");
-let cerrarMenu = document.querySelector("#cerrarM");
-let nav = document.querySelector("#nav");
-let principalContainer = document.querySelector("#principal-container")
-let mobileContainer = document.querySelector("#mobileContainer")
 
-
-
-abrirMenu.addEventListener("click", () => {
-    nav.classList.add("visible")
-})
-
-cerrarMenu.addEventListener("click", () =>{
-    nav.classList.remove("visible")
-})
 
 
 $(".custom-carousel").owlCarousel({

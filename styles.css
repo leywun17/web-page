@@ -70,8 +70,8 @@ header{
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-
 }
+
 .texto-circulo{
     margin-left: 650px;
     margin-top: 15%;
@@ -528,20 +528,12 @@ button {
         height: 80px;
         background-color: #1C1427;
     }
-    
-    .mobil{
-        display: flex;
-    }
-
-    #principal-container{
-        display: flex;
-    }
 
     .pc{
         display: none;
     }
-
-    .cuerpo{
+    
+    .bodypc{
         display: none;
     }
 
@@ -562,7 +554,6 @@ button {
         padding: 25px;
     }
 
-
     .mobile h1{
         color: #7ECA9C;
         font-family: 'Roboto Condensed', sans-serif;
@@ -582,7 +573,7 @@ button {
         position: absolute;
         z-index: 1;
         box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
-    } 
+    }
 
     .nav-list {
         list-style-type: none;
@@ -595,7 +586,7 @@ button {
         text-decoration: none;
         color: white;
     }
-
+    
     .menu{
         background-color: #685a7c;
         display: flex;
@@ -604,7 +595,7 @@ button {
         align-items: center;
         border-radius: 5px;
     }
-
+    
     .cerrar-menu{
         background-color: #1C1427;
         border: none;
@@ -615,6 +606,10 @@ button {
         border-radius: 5px;
     }
 
+    .visible{
+        display: block;
+    }
+    
     .botones{
         margin-top: 25px;
         background-color: transparent;
@@ -623,14 +618,6 @@ button {
 
     .botones p{
         color: white;
-    }
-    
-    .visible{
-        display: flex;
-    }
-
-    .difuminado{
-        filter: blur(8px);
     }
 
     .principal-container{
@@ -743,4 +730,7 @@ button {
     }
     
 
+    .bodypc{
+        display: none;
+    }
 }

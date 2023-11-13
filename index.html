@@ -8,7 +8,6 @@
 </head>
 <body>
 
-
     <header class="header">
 
         <section class="pc">
@@ -32,7 +31,6 @@
                 <h1>ArcadeLand</h1>
                 <button id="abrir" class="menu">
                     <img class="menu" src="images/icons8-menú.svg" alt="">
-                    
                 </button>
             </div>
             
@@ -51,9 +49,10 @@
             </nav>
             
         </section>
+
     </header>
     
-    <section class="cuerpo">
+    <section class="cuerpo bodypc">
         <div class="circulo">
             <p class="texto-circulo">Los mejores juegos de cada categoria los podras encontrar aqui</p>
         </div>
@@ -86,6 +85,25 @@
                         <h3>68+k</h3>
                     </div>
                     <span>clientes</span>
+                </div>
+            </div>
+
+            <div id="container">
+                <div id="slider-container">
+                    <span onclick="slideRight()" class="btn"></span>
+                    <div id="slider">
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                        <div class="slide"><span>150x150</span></div>
+                    </div>
+                    <span onclick="slideLeft()" class="btn"></span>
                 </div>
             </div>
             
@@ -182,4 +200,4 @@
     <script src="corsel.js"></script>
     <script src="index.js"></script>
 </body>
-</html>
+</html>             
