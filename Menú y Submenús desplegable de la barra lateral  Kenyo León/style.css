@@ -299,6 +299,7 @@ html{
   flex-wrap: wrap;
   padding: 20px;
   padding-bottom: 50px;
+  border-radius: 20px;
 }
 
 .container-cartas{
@@ -306,6 +307,7 @@ html{
   height: 400px;
   position: relative;
   margin: 10px;
+  
 }
 
 .carta{
