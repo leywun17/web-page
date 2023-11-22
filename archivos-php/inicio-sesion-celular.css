@@ -4,7 +4,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: wheat;
+    background-color: white;
+    color: white;
 }
 
 .form_main {
